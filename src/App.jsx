@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Dashboard from "./components/Dashboard";
-import BulkValidation from "./components/BulkValidation";
+import BulkValidation from "./components/Bulkvalidation.jsx";
 
 const sidebarItems = [
   { id: "dashboard",   icon: "⊞",  label: "Dashboard"  },

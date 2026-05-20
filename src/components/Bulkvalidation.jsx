@@ -1,8 +1,5 @@
 import { useRef, useState } from "react";
 
-// ⚠️ This component receives activeTab from App.jsx
-// It has NO sidebar, NO header, NO tabs — those live in App.jsx only
-
 export default function BulkValidation({ activeTab = "bulk" }) {
   const [dragOver, setDragOver] = useState(false);
   const [uploadedFile, setUploadedFile] = useState(null);
