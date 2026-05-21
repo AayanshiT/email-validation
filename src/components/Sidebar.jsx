@@ -7,7 +7,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import Dashboard from "./Dashboard";
-import BulkValidation from "./BulkValidation.jsx";
+import BulkValidation from "../components/BulkValidation";
 import Pricing from "./Pricing";
 
 const sidebarItems = [
