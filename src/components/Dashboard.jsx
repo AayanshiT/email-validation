@@ -208,7 +208,7 @@ export default function Dashboard() {
               <span className="text-lg">💬</span>
             </div>
             <p className="text-sm font-medium text-gray-700 flex-1">
-              Do you like using no2bounce?
+              Do you like using email validation?
             </p>
             {/* Decorative icon */}
             <div className="hidden sm:block text-gray-200 text-4xl mr-4">💬</div>
@@ -243,7 +243,7 @@ export default function Dashboard() {
           >
             <span>{feedbackAnswer === "yes" ? "🎉" : "😔"}</span>
             {feedbackAnswer === "yes"
-              ? "Thanks for the love! We're glad you enjoy no2bounce."
+              ? "Thanks for the love! We're glad you enjoy email validation."
               : "Thanks for the feedback! We'll work to improve your experience."}
           </div>
         )}
