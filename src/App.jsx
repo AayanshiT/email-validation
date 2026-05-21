@@ -2,7 +2,7 @@ import { useState } from "react";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Dashboard from "./components/Dashboard";
-import BulkValidation from "./components/BulkValidation";
+import BulkValidation from "./components/Bulkvalidation";
 import Pricing from "./components/Pricing";
 import ForgotPassword from "./components/ForgotPassword";
 
