@@ -4,6 +4,7 @@ import Signup          from "./components/Signup";
 import ForgotPassword  from "./components/ForgotPassword";
 import AppShell        from "./components/Sidebar";
 import Pricing         from "./components/Pricing";
+import Profile         from "./components/Profile";
 
 export default function App() {
   return (
@@ -12,7 +13,8 @@ export default function App() {
       <Route path="/login"          element={<Login />} />
       <Route path="/signup"         element={<Signup />} />
       <Route path="/forgot-password" element={<ForgotPassword />} />
-      <Route path="/pricing" element={<Pricing/>} />
+      {/* <Route path="/pricing" element={<Pricing/>} />
+      <Route path="/profile" element={<Profile />} /> */}
 
       {/* All app pages live inside AppShell (sidebar + header) */}
       <Route path="/app/*" element={<AppShell />} />

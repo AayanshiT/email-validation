@@ -5,10 +5,12 @@ import {
   NavLink,
   useNavigate,
   Navigate,
+  useLocation,
 } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import BulkValidation from "./Bulkvalidation";
 import Pricing from "./Pricing";
+import Profile from "./Profile";
 
 const sidebarItems = [
   { to: "/app/dashboard", icon: "⊞", label: "Dashboard" },
@@ -32,7 +34,8 @@ export default function AppShell() {
   const navigate = useNavigate();
 
   // Show tabs only on validations route
-  const isValidations = window.location.pathname.includes("/app/validations");
+ const location = useLocation();
+const isValidations = location.pathname.includes("/app/validations");
 
   return (
     <div className="flex min-h-screen bg-gray-50 font-sans">
@@ -161,12 +164,13 @@ export default function AppShell() {
                     <button
                       key={item}
                       className="w-full text-left px-4 py-2.5 text-sm text-gray-600 hover:bg-gray-50 transition"
+                      onClick={() => { navigate("/profile"); setUserDrop(false); }}
                     >
                       {item}
                     </button>
                   ))}
                   <button
-                    onClick={() => navigate("/login")}
+                    onClick={() => { navigate("/login"); setUserDrop(false); }}
                     className="w-full text-left px-4 py-2.5 text-sm text-red-500 hover:bg-red-50 transition"
                   >
                     Logout
@@ -186,6 +190,8 @@ export default function AppShell() {
             element={<BulkValidation activeTab={activeTab} />}
           />
           <Route path="pricing" element={<Pricing />} />
+          <Route path="profile" element={<Profile />} />
+          {/* <Route path="/login" element={<Login />} /> */}
           <Route
             path="reacher"
             element={
