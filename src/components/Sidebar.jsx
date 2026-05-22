@@ -18,6 +18,7 @@ const sidebarItems = [
   { to: "/app/reacher", icon: "🔓", label: "Reacher" },
   { to: "/app/support", icon: "💬", label: "Support" },
   { to: "/app/pricing", icon: "💳", label: "Pricing" },
+  { to: "/app/profile", icon: "👤", label: "Profile" },
 ];
 
 const validationTabs = [
